@@ -29,11 +29,11 @@ app.post("/", function(req, res) {
   }
 
   mailchimp.setConfig({
-    apiKey: '5d29e895e055d7b3aa6bf38a886cd0db-us18',
-    server: 'us18'
+    apiKey: '',
+    server: ''
   });
 
-  const listId = '3801d12798';
+  const listId = '';
 
   const run = async () => {
     const response = await mailchimp.lists.batchListMembers(listId, {
